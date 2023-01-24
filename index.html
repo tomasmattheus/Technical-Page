@@ -11,21 +11,20 @@
     <!--La pagina debe ser responsive-->
     <nav id="navbar">
         <header id="topic">React.js Documentation</header>
-        <a href="#getting-started" class="nav-link">Getting Started</a>
-        <a href="#addreact" class="nav-link">Add React to your Website</a>
-        <a href="#createapp" class="nav-link">Create a new React App</a>
+        <a href="#getting_started" class="nav-link">Getting Started</a>
+        <a href="#add_react_to_a_website" class="nav-link">Add React to your Website</a>
+        <a href="#create_a_new_react_app" class="nav-link">Create a new React App</a>
         <a href="#CDN_links" class="nav-link">CDN Links</a>
-        <a href="#release" class="nav-link">Release channels</a>
+        <a href="#release_channels" class="nav-link">Release channels</a>
     </nav>
     <!--main content, technical documentation-->
-    <main class="id-doc">
+    <main id="main-doc">
         <!-- los .main-section deben contener al menos
         -10 elementos "p"
         -5 elementos "code"
         -5 elementos "li" -->
-        <section class="main-section" id="getting-started">
-            <header>
-                <h1>Getting Started</h1>
+        <section class="main-section" id="getting_started">
+            <header>Getting Started</header>
                 <p class="subtitle">This page is an overview of the React documentation and related resources.</p>
                 <p>
                     React is a JavaScript library for building user interfaces. Learn what React is all about on our homepage or in the tutorial.
@@ -44,10 +43,9 @@
                     <br>
                     If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
                 </p>
-            </header></section>
-        <section class="main-section" id="addreact">
-            <header>
-                <h1>Add React to a Website</h1></header>
+            </section>
+        <section class="main-section" id="add_react_to_a_website">
+            <header>Add React to a Website</header>
                 <p class="subtitle">Use as little or as much React as you need.</p>
                 <p>React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Perhaps you only want to add some “sprinkles of interactivity” to an existing page. React components are a great way to do that.</p>
                 <p>The majority of websites aren’t, and don’t need to be, single-page apps. With a few lines of code and no build tooling, try React in a small part of your website. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.</p>
@@ -84,12 +82,12 @@
                 <h3>Step 2: Add the Script Tags</h3>
                 <p>Next, add three <code>&lt;script></code> tags to the HTML page right before the closing <code>&lt;/body></code> tag:</p>
             </section>
-        <section class="main-section" id="createapp">
+        <section class="main-section" id="create_a_new_react_app">
             <header>
-                <h1>Create a New React App</h1>
-
-                <p class="subtitle">Use an integrated toolchain for the best user and developer experience.</p>
+                Create a New React App
             </header>
+                <p class="subtitle">Use an integrated toolchain for the best user and developer experience.</p>
+            
             <p>This page describes a few popular React toolchains which help with tasks like:</p>
         
             <ul>
@@ -105,11 +103,9 @@
         </section>
         <section class="main-section" id="CDN_links">
             <header>
-                <h1>CDN Links</h1>
+                CDN Links</header> 
                 <p class="subtitle">Both React and ReactDOM are available over a CDN.</p>
-            
-               
-            </header> 
+        
             <div class="code">
                 <pre class="pre_code">
                     <code>
@@ -136,11 +132,12 @@
 
             <p>To load a specific version of react and react-dom, replace 18 with the version number.</p>
             </section>
-        <section class="main-section" id="release">
+        <section class="main-section" id="release_channels">
             <header>
-                <h1>Release channels</h1>
-                <p class="subtitle">React relies on a thriving open source community to file bug reports, open pull requests, and submit RFCs. To encourage feedback we sometimes share special builds of React that include unreleased features.</p>
+               Release channels
             </header>
+                <p class="subtitle">React relies on a thriving open source community to file bug reports, open pull requests, and submit RFCs. To encourage feedback we sometimes share special builds of React that include unreleased features.</p>
+            
             <div class="tip">
                 <strong> This document will be most relevant to developers who work on frameworks, libraries, or developer tooling. Developers who use React primarily to build user-facing applications should not need to worry about our prerelease channels.</strong>
             </div>
