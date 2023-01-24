@@ -110,16 +110,49 @@
             
                
             </header> 
-            <pre class="pre_code">
+            <div class="code">
+                <pre class="pre_code">
                     <code>
                         <span>&lt;script crossorigin src="https://unpkg.com/react@18/umd/react.development.js">&lt;/script></span>
                         <span>&lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">&lt;/script></span>
                     </code>
-                </pre></section>
+                </pre>
+            </div>
+
+            <p>The versions above are only meant for development, and are not suitable for production. <br> <br> Minified and optimized production versions of React are available at:</p>
+
+            <div class="code">
+                <pre class="pre_code">
+                    <code>
+                        <span>
+                            &lt;script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js">&lt;/script>
+                        </span>
+                        <span>
+                            &lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js">&lt;/script>
+                        </span>
+                    </code>
+                </pre>
+            </div>
+
+            <p>To load a specific version of react and react-dom, replace 18 with the version number.</p>
+            </section>
         <section class="main-section" id="release">
             <header>
+                <h1>Release channels</h1>
+                <p class="subtitle">React relies on a thriving open source community to file bug reports, open pull requests, and submit RFCs. To encourage feedback we sometimes share special builds of React that include unreleased features.</p>
+            </header>
+            <div class="tip">
+                <strong> This document will be most relevant to developers who work on frameworks, libraries, or developer tooling. Developers who use React primarily to build user-facing applications should not need to worry about our prerelease channels.</strong>
+            </div>
 
-            </header></section>
+            <p>Each of React’s release channels is designed for a distinct use case:</p>
+        
+            <ul>
+                <li class="item_lista"><strong>Latest</strong> is for stable, semver React releases. It’s what you get when you install React from npm. This is the channel you’re already using today. <strong>Use this for all user-facing React applications.</strong></li>
+                <li class="item_lista"><strong>Next</strong> tracks the main branch of the React source code repository. Think of these as release candidates for the next minor semver release. Use this for integration testing between React and third party projects.</li>
+                <li class="item_lista"><strong>Experimental</strong> includes experimental APIs and features that aren’t available in the stable releases. These also track the main branch, but with additional feature flags turned on. Use this to try out upcoming features before they are released.</li>
+            </ul>
+        </section>
     </main>
 
 </body>
