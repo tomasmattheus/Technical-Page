@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REACT JS</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!--La pagina debe ser responsive-->
+    <nav id="navbar">
+        <header id="topic">React.js Documentation</header>
+        <a href="#getting-started" class="nav-link">Getting Started</a>
+        <a href="#addreact" class="nav-link">Add React to your Website</a>
+        <a href="#createapp" class="nav-link">Create a new React App</a>
+        <a href="#CDN_links" class="nav-link">CDN Links</a>
+        <a href="#release" class="nav-link">Release channels</a>
+    </nav>
+    <!--main content, technical documentation-->
+    <main class="id-doc">
+        <!-- los .main-section deben contener al menos
+        -10 elementos "p"
+        -5 elementos "code"
+        -5 elementos "li" -->
+        <section class="main-section" id="getting-started">
+            <header>
+                <h1>Getting Started</h1>
+                <p class="subtitle">This page is an overview of the React documentation and related resources.</p>
+                <p>
+                    React is a JavaScript library for building user interfaces. Learn what React is all about on our homepage or in the tutorial.
+                </p>
+                <ul>
+                <li class="item_lista">Try React</li>
+                <li class="item_lista">Learn React</li>
+                <li class="item_lista">Staying Informed</li>
+                <li class="item_lista">Versioned Documentation</li>
+                <li class="item_lista">Something Missing?</li></ul>
+                <h2>Try React</h2>
+                <p>React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.</p>
+                <h2>Online Playgrounds </h2>
+                <p>If you’re interested in playing around with React, you can use an online code playground. Try a Hello World template on CodePen, CodeSandbox, or Stackblitz.
+                    <br>
+                    <br>
+                    If you prefer to use your own text editor, you can also download this HTML file, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.
+                </p>
+            </header></section>
+        <section class="main-section" id="addreact">
+            <header>
+                <h1>Add React to a Website</h1></header>
+                <p class="subtitle">Use as little or as much React as you need.</p>
+                <p>React has been designed from the start for gradual adoption, and you can use as little or as much React as you need. Perhaps you only want to add some “sprinkles of interactivity” to an existing page. React components are a great way to do that.</p>
+                <p>The majority of websites aren’t, and don’t need to be, single-page apps. With a few lines of code and no build tooling, try React in a small part of your website. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.</p>
+                <ul>
+                    <li class="item_lista">Add React in One Minute</li>
+                    <li class="item_lista">Optional: Try React with JSX(no bundle necessary!)</li>
+                </ul>
+                
+                <h2>Add React in One Minute</h2>
+
+                <p>In this section, we will show how to add a React component to an existing HTML page. You can follow along with your own website, or create an empty HTML file to practice.</p>
+                <p>There will be no complicated tools or install requirements — <strong> complete this section, you only need an internet connection, and a minute of your time.</strong></p>
+
+                <p>Optional: <a href="https://gist.github.com/gaearon/6668a1f6986742109c00a581ce704605/archive/87f0b6f34238595b44308acfb86df6ea43669c08.zip" target="_blank">Download the full example(2KB zipped).</a>
+            
+                <h3>Step 1: Add a DOM container to the HTML</h3>
+                <p>First, open the HTML page you want to edit. Add an empty <div> tag to mark the spot where you want to display something with React. For example:</p>
+                <div class="code">
+                    <pre class="pre_code">
+                    <span class="comment">&lt;!-- ... existing HTML ... --></span>
+                        <code>
+                            <span class="highlighted">&lt;div id="like_button_container"&gt;&lt;/div></span>
+                        </code>
+                    <span class="comment"> &lt;!-- ... existing HTML ... --></span>
+                    </pre>
+                </div>
+                <p>We gave this <code>&lt;div&gt;</code> a unique <code>id</code> HTML attribute. This will allow us to find it from the JavaScript code later and display a React component inside of it.</p>
+                
+                <div class="tip">
+                    <h4>Tip</h4>
+                    <p>You can place a “container” <code>&lt;div></code> like this anywhere inside the <code>&lt;body></code> tag. You may have as many independent DOM containers on one page as you need. They are usually empty — React will replace any existing content inside DOM containers.</p>
+                </div>
+
+                <h3>Step 2: Add the Script Tags</h3>
+                <p>Next, add three <code>&lt;script></code> tags to the HTML page right before the closing <code>&lt;/body></code> tag:</p>
+            </section>
+        <section class="main-section" id="createapp">
+            <header>
+                <h1>Create a New React App</h1>
+
+                <p class="subtitle">Use an integrated toolchain for the best user and developer experience.</p>
+            </header>
+            <p>This page describes a few popular React toolchains which help with tasks like:</p>
+        
+            <ul>
+                <li class="item_lista">Scaling to many files and components.</li>
+                <li class="item_lista">Using third-party libraries from npm.</li>
+                <li class="item_lista">Detecting common mistakes early.</li>
+                <li class="item_lista">Live-editing CSS and JS in development.</li>
+                <li class="item_lista">Optimizing the output for production.</li>
+            </ul>
+        
+            <p>The toolchains recommended on this page <strong>dont’t require configuration to get started.</strong></p>
+        
+        </section>
+        <section class="main-section" id="CDN_links">
+            <header>
+                <h1>CDN Links</h1>
+                <p class="subtitle">Both React and ReactDOM are available over a CDN.</p>
+            
+               
+            </header> 
+            <pre class="pre_code">
+                    <code>
+                        <span>&lt;script crossorigin src="https://unpkg.com/react@18/umd/react.development.js">&lt;/script></span>
+                        <span>&lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">&lt;/script></span>
+                    </code>
+                </pre></section>
+        <section class="main-section" id="release">
+            <header>
+
+            </header></section>
+    </main>
+
+</body>
+</html>
